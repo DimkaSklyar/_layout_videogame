@@ -4,6 +4,9 @@
 @import "libs"
 
 /*==========  user style  ==========*/
+body
+	background-color: #fff
+	font-family: 'Roboto', sans-serif
 a
 	transition: .3s
 	&:link
@@ -19,6 +22,312 @@ ul
 	margin: 0
 	padding: 0
 	list-style: none
+
+.btn-circle
+	background-color: $accent
+	font-size: 45px
+	color: #fff
+	padding: 45px 49px
+	border-radius: 50%
+	line-height: 1
+	display: inline-block
+	transition: .5s
+	&:hover
+		color: #fff
+		transform: rotate(-360deg)
+		background-color: #403f42
+.btn-blue
+	background-color: #3498db
+.btn-green
+	background-color: #96ca2d
+.btn-gray
+	background-color: #403f42
+	&:hover
+		background-color: #000
+
+.page-header
+	background: url('../img/header-bg.jpg') no-repeat 50% 50%
+	background-size: cover
+	.top-header
+		padding-bottom: 60px
+	.address-top
+		padding: 15px 0
+		address
+			position: relative
+			color: #fff
+			padding-left: 32px
+			&:before
+				position: absolute
+				content: '\f041'
+				font-family: "FontAwesome"
+				color: $accent
+				font-size: 32px
+				left: 0
+	.social-top
+		background-color: #fff
+		padding: 15px 0
+		position: relative
+		&:before
+			position: absolute
+			content: ''
+			border: 39px solid #fff
+			top: 0
+			left: -30px
+			border-left-color: transparent
+			border-bottom-color: transparent
+			border-left-width: 15px
+			border-right-width: 15px
+		ul
+			display: flex
+			justify-content: center
+			li
+				margin: 0 15px
+				a
+					color: #000
+					font-size: 32px
+					display: inline-block
+					&:hover
+						color: #e74c3c
+						transform: scale(1.3)
+	.logo
+		img
+			width: 100%
+	.contacts-phone
+		display: flex
+		justify-content: flex-end
+		i
+			color: $accent
+			font-size: 60px
+		&__tel
+			display: flex
+			flex-direction: column
+			margin-left: 5px
+			span
+				color: $accent
+				text-transform: uppercase
+				font-style: italic
+			a
+				color: #fff
+				font-weight: bold
+				font-size: 26px
+				line-height: 1
+				font-style: italic
+	.navigation-wrap
+		background-color: #403f42
+		margin-top: 100px
+		.navigation
+			ul
+				display: flex
+				align-items: center
+				li
+					padding: 30px 25px
+					a
+						color: #fff
+						text-transform: uppercase
+						font-weight: bold
+						&:hover
+							color: $accent
+						&.active
+							color: $accent
+		.cart-wrap
+			background-color: $accent
+			text-align: right
+			height: 100%
+			margin-right: -15px
+			display: flex
+			align-items: center
+			justify-content: center
+			position: relative
+			&:before
+				position: absolute
+				content: ''
+				border: 42px solid $accent
+				top: 0
+				left: -30px
+				border-left-color: transparent
+				border-bottom-color: transparent
+				border-left-width: 15px
+				border-right-width: 15px
+			.cart
+				display: flex
+				align-items: center
+				i
+					background-color: #fff
+					border-radius: 50%
+					padding: 20px
+					font-size: 32px
+					margin-right: 15px
+					cursor: pointer
+					transition: .5s
+					&:hover
+						transform: rotate(-360deg)
+				p
+					font-weight: bold
+					font-style: italic
+					text-transform: uppercase
+					margin-bottom: 0
+					color: #fff
+				span
+					color: #fff
+					font-size: 18px
+					font-weight: bold
+					display: inline-block
+					margin-left: 5px
+					font-style: italic
+
+.slider-wrap
+	overflow: hidden
+	.my-slider
+		max-height: 912px
+		&-item
+			max-height: 912px
+			overflow: hidden
+			display: flex
+			align-items: flex-start
+			justify-content: center
+			&:focus
+				outline: none 0
+				border: none
+			&__desc
+				position: absolute
+				z-index: 3
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				text-align: center
+				.slag
+					font-style: italic
+					text-transform: uppercase
+					font-size: 26px
+					color: $accent
+					font-weight: bold
+					line-height: 1
+				.game-name
+					text-transform: capitalize
+					color: #fff
+					font-size: 120px
+					line-height: 1
+					padding-bottom: 25px
+					font-style: italic
+				.game-desc
+					width: 75%
+					color: #fff
+					margin: 0 auto
+					font-size: 22px
+					text-transform: uppercase
+					line-height: 1
+					margin-bottom: 20px
+.slick-next
+	right: 35px
+	top: 45%
+	&:hover:before
+		color: $accent
+	&:before
+		font-family: "FontAwesome"
+		content: '\f105'
+		font-size: 75px
+		line-height: 1
+		transition: .4s
+.slick-prev
+	left: 35px
+	top: 45%
+	z-index: 2
+	&:hover:before
+		color: $accent
+	&:before
+		font-family: "FontAwesome"
+		content: '\f104'
+		font-size: 75px
+		line-height: 1
+		transition: .4s
+.slick-track
+	max-height: 912px
+
+
+.banners
+	margin-top: -40px
+	&-item-wrap:nth-child(1)
+		.banners-item
+			background-color: #ff5335
+	&-item-wrap:nth-child(2)
+		.banners-item
+			background: url('../img/banner1.jpg') no-repeat
+			background-size: cover
+			display: flex
+			align-items: center
+			justify-content: flex-end
+			padding-right: 50px
+	&-item-wrap:nth-child(3)
+		.banners-item
+			background-color: #96ca2d
+			i
+				color: #5a7b19
+			span
+				color: #cbe596
+	&-item-wrap:nth-child(4)
+		.banners-item
+			background-color: #3498db
+			i
+				color: #20608b
+			span
+				color: #9acced
+	&-item-wrap:nth-child(5)
+		.banners-item
+			background-color: #f29b30
+			i
+				color: #ba7725
+			span
+				color: #f9cd98
+	&-item-wrap:nth-child(6)
+		.banners-item
+			background: url('../img/banner2.jpg') no-repeat
+			background-size: cover
+			display: flex
+			align-items: center
+			justify-content: flex-end
+			padding-right: 50px
+	&-item-wrap:nth-child(7)
+		.banners-item
+			background: url('../img/banner3.jpg') no-repeat
+			background-size: cover
+			display: flex
+			align-items: flex-end
+			justify-content: flex-end
+			padding-right: 20px
+			padding-bottom: 20px
+			.btn-gray
+				font-size: 30px
+				padding: 25px 28px
+	&-item
+		color: #fff
+		display: flex
+		min-height: 371px
+		margin-bottom: 30px
+		transition: .3s
+		&:hover
+			box-shadow: 0 0 0 10px rgba(255,255,255,.5) inset
+		&:hover p
+			color: #ffaa9b
+	&-item-info
+		flex-direction: column
+		padding: 40px 30px 30px
+		i
+			font-size: 110px
+			color: #ad3925
+		p
+			color: #fff
+			font-style: italic
+			font-weight: 300
+			font-size: 55px
+			line-height: 1
+			margin-bottom: 5px
+			transition: .3s
+		span
+			text-transform: uppercase
+			font-size: 20px
+			font-weight: 500
+			color: #ffa99a
+			line-height: 1
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end
