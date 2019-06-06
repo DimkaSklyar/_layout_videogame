@@ -8266,6 +8266,7 @@ ul {
 
 .banners {
   margin-top: -40px;
+  margin-bottom: -70px;
 }
 
 .banners-item-wrap:nth-child(1) .banners-item {
@@ -8385,6 +8386,368 @@ ul {
   line-height: 1;
 }
 
+.top-game {
+  background: url("../img/parallax-slide1.jpg") no-repeat 50% 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.top-game h2 {
+  color: #fff;
+  font-style: italic;
+  font-size: 62px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.top-game-item {
+  display: flex;
+}
+
+.top-game-item .top-game-desc {
+  margin-left: 30px;
+}
+
+.top-game-item .top-game-desc h3 {
+  font-size: 32px;
+  color: #fff;
+  line-height: 1;
+  transition: .2s;
+  width: 80%;
+}
+
+.top-game-item .top-game-desc h3:hover {
+  color: #e74c3c;
+}
+
+.top-game-item .top-game-desc p {
+  color: #e7e7e7;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.top-game-item .top-game-desc .price {
+  font-weight: 700;
+  color: #e74c3c;
+  font-size: 26px;
+}
+
+.top-game-item .top-game-img {
+  transition: .3s;
+}
+
+.top-game-item .top-game-img:hover {
+  box-shadow: -8px 8px 0 0px #e74c3c;
+  transform: translate(3px, -3px);
+}
+
+.top-game-item .top-game-img img {
+  transition: .2s;
+}
+
+.about {
+  background-color: #f5f5f5;
+  padding: 80px 0 100px;
+}
+
+.about-img img {
+  width: 100%;
+}
+
+.about .title-section {
+  font-size: 60px;
+  font-style: italic;
+  color: #e74c3c;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.about .description-section {
+  font-size: 60px;
+  font-style: italic;
+  color: #403f42;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+
+.about .slogan {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 26px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.about p {
+  font-weight: 300;
+}
+
+.about .about-img img {
+  box-shadow: -8px 8px 0 0px #e74c3c;
+}
+
+.product {
+  padding: 80px 0;
+}
+
+.product .title-section {
+  font-style: italic;
+  font-size: 60px;
+  color: #e74c3c;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.product-item {
+  margin-bottom: 80px;
+}
+
+.product-item__img {
+  background-color: #fff;
+  transition: .2s;
+}
+
+.product-item__img:hover {
+  transform: scale(1.1);
+}
+
+.product-item__img img {
+  width: 100%;
+}
+
+.product-item__desc {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.product-item__desc h3 {
+  font-style: italic;
+}
+
+.product-item__desc .price {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #e74c3c;
+  font-size: 24px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.product-item__desc .description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.product .btn {
+  border-radius: 50%;
+  width: 71px;
+  height: 71px;
+  font-size: 30px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+  transition: .3s;
+}
+
+.product .btn i {
+  line-height: 71px;
+  color: #fff;
+}
+
+.product .btn-info {
+  background-color: #403f42;
+}
+
+.product .btn-info:hover {
+  background-color: #e74c3c;
+  transform: rotate(-360deg);
+}
+
+.product .btn-cart {
+  background-color: #e74c3c;
+}
+
+.product .btn-cart:hover {
+  background-color: #403f42;
+  transform: rotate(-360deg);
+}
+
+.btn-show {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 20px 50px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+.btn-show:hover {
+  color: #fff;
+  background-color: #403f42;
+}
+
+.subscribe {
+  background-color: #39373b;
+  padding: 50px 0;
+}
+
+.subscribe-desc {
+  text-transform: uppercase;
+  font-size: 20px;
+  position: relative;
+  line-height: 1;
+  color: #fff;
+  font-weight: 300;
+}
+
+.subscribe-desc p {
+  padding-left: 55px;
+  font-style: italic;
+}
+
+.subscribe-desc:before {
+  position: absolute;
+  font-family: "FontAwesome";
+  content: '\f003';
+  font-size: 40px;
+  left: 0;
+  color: #e74c3c;
+}
+
+.subscribe .subscib-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe .subscib-form #sub-wrap input {
+  background: #2a292c;
+  padding: 27px 38px;
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: none;
+  color: #c8c8c8;
+  height: 94px;
+  margin: 0;
+  border: none;
+  text-align: left;
+  font-weight: 600;
+  max-width: 560px;
+  font-style: italic;
+}
+
+.subscribe .subscib-form button {
+  background-color: #e74c3c;
+  border: none;
+  outline: none 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  padding: 27px 38px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.subscribe .subscib-form button:hover {
+  background-color: #403f42;
+  color: #fff;
+}
+
+footer {
+  background: url("../img/header-bg.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  padding: 80px 0 150px;
+}
+
+footer nav a {
+  color: #fff;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+footer nav a.active {
+  color: #e74c3c;
+}
+
+footer nav a:hover {
+  color: #e74c3c;
+}
+
+footer .social-bottom ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer .social-bottom ul li {
+  margin-left: 15px;
+}
+
+footer .social-bottom ul a {
+  width: 71px;
+  height: 71px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #39373b;
+  color: #888;
+  text-align: center;
+  font-size: 30px;
+}
+
+footer .social-bottom ul a:hover {
+  background-color: #e74c3c;
+  transform: rotate(-360deg);
+  color: #fff;
+}
+
+footer .social-bottom ul a i {
+  line-height: 71px;
+}
+
 /*==========  user style  ==========*/
+.ps4 {
+  position: relative;
+}
+
+.ps4:before {
+  content: '';
+  position: absolute;
+  background: url("../img/ps4-logo.png") no-repeat;
+  height: 50px;
+  width: 70px;
+  right: 0;
+  background-size: contain;
+}
+
+.slick-slide:focus {
+  outline: none 0;
+  border: none;
+}
+
+.carousel .slick-dots li button:before {
+  color: #e74c3c;
+  font-size: 25px;
+}
+
+.carousel .slick-dots li.slick-active button:before {
+  color: #e74c3c;
+}
+
+.carousel .slick-dots {
+  bottom: -50px;
+}
+
+.carousel .slick-slide {
+  padding: 10px 15px;
+}
+
 /*==========  Desktop First  ==========*/
 /*==========  Mobile First  ==========*/
