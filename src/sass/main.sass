@@ -7,6 +7,16 @@
 body
 	background-color: #fff
 	font-family: 'Roboto', sans-serif
+	min-width: 1000px
+	.container
+		+media-breakpoint-down(md)
+			width: 960px
+			max-width: 100%
+		+media-breakpoint-down(sm)
+			width: 960px
+			max-width: 100%
+#messegeResult-feedback
+	color: #fff
 a
 	transition: .3s
 	&:link
@@ -121,6 +131,8 @@ ul
 				align-items: center
 				li
 					padding: 30px 25px
+					+media-breakpoint-down(lg)
+						padding: 30px 20px
 					a
 						color: #fff
 						text-transform: uppercase
@@ -151,6 +163,8 @@ ul
 			.cart
 				display: flex
 				align-items: center
+				&:hover .smart-basket__min-icon
+					transform: rotate(-360deg)
 				i
 					background-color: #fff
 					border-radius: 50%
@@ -169,12 +183,13 @@ ul
 					color: #fff
 				span
 					color: #fff
-					font-size: 18px
+					font-size: 40px
 					font-weight: bold
 					display: inline-block
 					margin-left: 5px
 					font-style: italic
-
+					+media-breakpoint-down(lg)
+					font-size: 30px
 .slider-wrap
 	overflow: hidden
 	.my-slider
@@ -195,6 +210,8 @@ ul
 				left: 50%
 				transform: translate(-50%, -50%)
 				text-align: center
+				+media-breakpoint-down(lg)
+					width: 100%
 				.slag
 					font-style: italic
 					text-transform: uppercase
@@ -252,7 +269,7 @@ ul
 			background-color: #ff5335
 	&-item-wrap:nth-child(2)
 		.banners-item
-			background: url('../img/banner1.jpg') no-repeat
+			background: url('../img/banner1.jpg') no-repeat 0 50%
 			background-size: cover
 			display: flex
 			align-items: center
@@ -305,6 +322,8 @@ ul
 		min-height: 371px
 		margin-bottom: 30px
 		transition: .3s
+		+media-breakpoint-down(lg)
+			min-height: 321px
 		&:hover
 			box-shadow: 0 0 0 10px rgba(255,255,255,.5) inset
 		&:hover p
@@ -323,13 +342,16 @@ ul
 			line-height: 1
 			margin-bottom: 5px
 			transition: .3s
+			+media-breakpoint-down(lg)
+				font-size: 45px
 		span
 			text-transform: uppercase
 			font-size: 20px
 			font-weight: 500
 			color: #ffa99a
 			line-height: 1
-
+			+media-breakpoint-down(lg)
+				font-size: 15px
 .top-game
 	background: url('../img/parallax-slide1.jpg') no-repeat 50% 50%
 	background-attachment: fixed
@@ -561,6 +583,9 @@ footer
 					color: #fff
 				i
 					line-height: 71px
+	.logo
+		img
+			width: 100%
 /*==========  user style  ==========*/
 
 .ps4
@@ -590,5 +615,67 @@ footer
 		bottom: -50px
 	.slick-slide
 		padding: 10px 15px
+.cart
+	width: 150px
+.smart-basket__min
+	border: none
+	outline: none 
+	background-color: transparent
+	width: 80%
+	height: 80px
+	display: flex
+	align-items: center
+	justify-content: center
+	cursor: pointer
+	img
+		height: 55%
+.smart-basket__min-icon
+	width: 50px
+	transition: .5s
+	+media-breakpoint-down(lg)
+		width: 40px
+.smart-basket__min-count
+	font-size: 40px
 
+
+#small-dialog.retal
+	width: 400px
+#small-dialog
+	padding-bottom: 40px
+	min-width: 50%
+	.small-dialog__img
+		overflow: hidden
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-grow: 1
+		height: 100%
+		img
+			object-fit: contain
+			width: 100%
+			height: 100%
+	h2
+		text-transform: uppercase
+		font-weight: 600
+	.price
+		font-weight: bold
+		font-size: 1.1em
+		color: $accent
+		&+.fa
+			color: $accent
+
+.order-btn
+	background-color: $accent
+	border: none
+	outline: none 0
+	padding: 20px 30px
+	cursor: pointer
+	color: #fff
+	text-transform: uppercase
+	margin-top: 50px
+	transition: .3s
+	&:hover
+		background-color: #403f42
+.smart-basket__alert-wrapper
+	z-index: 9999
 @import "media" // Always at the end

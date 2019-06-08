@@ -25,11 +25,14 @@
 				<div class="col-4">
 					<div class="social-top">
 						<ul>
-							<li class="li"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-							<li class="li"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li class="li"><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-							<li class="li"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							<li class="li"><a href="#"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
+							<li class="li"><a href="https://vk.com"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+							<li class="li"><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							</li>
+							<li class="li"><a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+							</li>
+							<li class="li"><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							</li>
+							<li class="li"><a href="https://www.twitch.tv/"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -58,10 +61,10 @@
 						<nav>
 							<ul>
 								<li><a href="index.html" class="active">Главная</a></li>
-								<li><a href="#">Каталог</a></li>
-								<li><a href="#">О нас</a></li>
-								<li><a href="#">Доставка и оплата</a></li>
-								<li><a href="#">Контакты</a></li>
+								<li><a href="catalog.html">Каталог</a></li>
+								<li><a href="about.html">О нас</a></li>
+								<li><a href="delivery-pay.html">Доставка и оплата</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -69,8 +72,6 @@
 				<div class="col-3">
 					<div class="cart-wrap">
 						<div class="cart">
-							<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
-							<p>Корзина:</p><span>0</span>
 						</div>
 					</div>
 				</div>
@@ -78,43 +79,46 @@
 		</div>
 		</div>
 	</header>
-
 	<div class="slider-wrap">
 		<div class="my-slider">
 			<div class="my-slider-item">
 				<img src="img/slide1.jpg" alt="">
 				<div class="my-slider-item__desc">
 					<p class="slag">Лидеры продаж</p>
-					<h2 class="game-name">Dead Space 3</h2>
-					<p class="game-desc">Научно-фантастическая компьютерная игра в жанре шутера от третьего лица c элементами
-						survival horror</p>
-					<a href="#" class="btn-circle"><i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+					<h2 class="game-name">Red Dead Redemption 2</h2>
+					<p class="game-desc">>Игра Red Dead Redemption 2 от создателей GTA V и Red Dead Redemption – это грандиозное
+						повествование
+						о жизни в Америке на заре современной эпохи.</p>
+					<a href="#" class="btn-circle rdr"><i class="fa fa-file-text-o" aria-hidden="true"></i></a>
 				</div>
 			</div>
 			<div class="my-slider-item">
 				<img src="img/slide2.jpg" alt="">
 				<div class="my-slider-item__desc">
 					<p class="slag">Лидеры продаж</p>
-					<h2 class="game-name">Need for Speed</h2>
-					<p class="game-desc">Компьютерная игра серии Need for Speed в жанре аркадных автогонок, разработанная студией
-						Ghost Games</p>
-					<a href="#" class="btn-circle"><i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+					<h2 class="game-name">Metro Exodus</h2>
+					<p class="game-desc">Metro Exodus является третьей игрой в серии Metro, сюжет которой основан на
+						романах Дмитрия Глуховского и продолжает историю Metro 2033 и Metro: Last Light</p>
+					<a href="#" class="btn-circle metro"><i class="fa fa-file-text-o" aria-hidden="true"></i></a>
 				</div>
 			</div>
 			<div class="my-slider-item">
 				<img src="img/slide3.jpg" alt="">
 				<div class="my-slider-item__desc">
 					<p class="slag">Лидеры продаж</p>
-					<h2 class="game-name">Battlefield 4</h2>
-					<p class="game-desc">Мультиплатформенная компьютерная игра в жанре шутера от первого лица, двенадцатая по
+					<h2 class="game-name">Battlefield V</h2>
+					<p class="game-desc">Мультиплатформенная компьютерная игра в жанре шутера от первого лица, тренадцатая по
 						счету из серии игр Battlefield</p>
-					<a href="#" class="btn-circle"><i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+					<a href="#" class="btn-circle bf"><i class="fa fa-file-text-o" aria-hidden="true"></i></a>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<main>
+
+		<div class="smart-basket__wrapper"></div>
+
 		<section class="banners">
 			<div class="container">
 				<div class="row">
@@ -175,16 +179,17 @@
 				<div class="row carousel">
 					<div class="col">
 						<div class="top-game-item ps4">
-							<a href="#">
+							<a href="#" class="rdr">
 								<div class="top-game-img">
 									<img src="img/products/product-ps4-1.jpg" alt="">
 								</div>
 							</a>
 							<div class="top-game-desc">
-								<a href="#">
+								<a href="#" class="rdr">
 									<h3>Red Dead Redemption 2</h3>
 								</a>
-								<p>Игра Red Dead Redemption 2 от создателей GTA V и Red Dead Redemption – это грандиозное повествование
+								<p class="d-1">Игра Red Dead Redemption 2 от создателей GTA V и Red Dead Redemption – это грандиозное
+									повествование
 									о жизни в Америке на заре современной эпохи.</p>
 								<span class="price">3 999 руб.</span>
 							</div>
@@ -192,13 +197,13 @@
 					</div>
 					<div class="col">
 						<div class="top-game-item ps4">
-							<a href="#">
+							<a href="#" class="kid">
 								<div class="top-game-img">
 									<img src="img/products/product-ps4-2.jpg" alt="">
 								</div>
 							</a>
 							<div class="top-game-desc">
-								<a href="#">
+								<a href="#" class="kid">
 									<h3>Kingdom Hearts III</h3>
 								</a>
 								<p>В игре KINGDOM HEARTS III рассказывается история о силе дружбы. Сора и его друзья Дональд и Гуфи
@@ -209,51 +214,50 @@
 					</div>
 					<div class="col">
 						<div class="top-game-item ps4">
-							<a href="#">
+							<a href="#" class="bf">
 								<div class="top-game-img">
-									<img src="img/products/product-ps4-1.jpg" alt="">
+									<img src="img/products/product-ps4-3.jpg" alt="">
 								</div>
 							</a>
 							<div class="top-game-desc">
-								<a href="#">
-									<h3>Red Dead Redemption 2</h3>
+								<a href="#" class="bf">
+									<h3>Battlefield™ V</h3>
 								</a>
-								<p>Игра Red Dead Redemption 2 от создателей GTA V и Red Dead Redemption – это грандиозное повествование
-									о жизни в Америке на заре современной эпохи.</p>
-								<span class="price">3 999 руб.</span>
+								<p>Участвуйте в крупнейшем конфликте: серия возвращается к своим корням — Второй мировой — изображая её
+									в новом свете. Вас ждут масштабные «Большие операции», кооперативные «Совместные бои» и не только.</p>
+								<span class="price">2 900 руб.</span>
 							</div>
 						</div>
 					</div>
 					<div class="col">
 						<div class="top-game-item ps4">
-							<a href="#">
+							<a href="#" class="fifa">
 								<div class="top-game-img">
-									<img src="img/products/product-ps4-1.jpg" alt="">
+									<img src="img/products/product-ps4-4.jpg" alt="">
 								</div>
 							</a>
 							<div class="top-game-desc">
-								<a href="#">
-									<h3>Red Dead Redemption 2</h3>
+								<a href="#" class="fifa">
+									<h3>FIFA 19</h3>
 								</a>
-								<p>Игра Red Dead Redemption 2 от создателей GTA V и Red Dead Redemption – это грандиозное повествование
-									о жизни в Америке на заре современной эпохи.</p>
-								<span class="price">3 999 руб.</span>
+								<p>EA SPORTS™ FIFA 19 на базе Frostbite™ с UEFA Champions League — это новый улучшенный игровой процесс.
+								</p>
+								<span class="price">1 799 руб.</span>
 							</div>
 						</div>
 					</div>
 					<div class="col">
 						<div class="top-game-item ps4">
-							<a href="#">
+							<a href="#" class="ge3">
 								<div class="top-game-img">
-									<img src="img/products/product-ps4-1.jpg" alt="">
+									<img src="img/products/product-ps4-5.jpg" alt="">
 								</div>
 							</a>
 							<div class="top-game-desc ps4">
-								<a href="#">
-									<h3>Red Dead Redemption 2</h3>
+								<a href="#" class="ge3">
+									<h3>God Eater 3</h3>
 								</a>
-								<p>Игра Red Dead Redemption 2 от создателей GTA V и Red Dead Redemption – это грандиозное повествование
-									о жизни в Америке на заре современной эпохи.</p>
+								<p>Над разоренным миром: встречайте новую часть популярного экшена God Eater!</p>
 								<span class="price">3 999 руб.</span>
 							</div>
 						</div>
@@ -290,149 +294,282 @@
 				<div class="row">
 					<div class="col-3">
 						<div class="product-item">
-							<a href="#">
+							<a href="#small-dialog" class="popup-with-zoom-anim" id="rdr">
 								<div class="product-item__img">
 									<img src="img/products/p-ps4-1.jpg" alt="">
 								</div>
 							</a>
 							<div class="product-item__desc">
+								<span class="d-none article">0001</span>
 								<span class="price">2 990 Руб</span>
 								<h3>Red Dead Redemption 2</h3>
 								<p class="description">Компьютерная игра в жанрах action-adventure и шутера от третьего лица с открытым
 									миром, разработанная и выпущенная Rockstar Games для игровых приставок PlayStation 4 и Xbox
 									One в 2018 году. Является третьей в серии Red Dead и приквелом к Red Dead Redemption (2010).</p>
 							</div>
-							<a href="#" class="btn btn-info"><i class="fa fa-info" aria-hidden="true"></i></a>
-							<a href="#" class="btn btn-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							<a href="#small-dialog" class="btn btn-info popup-with-zoom-anim"><i class="fa fa-info"
+									aria-hidden="true"></i></a>
+							<a href="#1" class="btn btn-cart product__add-to-cart-button" data-sb-id-or-vendor-code="0001"
+								data-sb-product-name="Red Dead Redemption 2" data-sb-product-price="2990" data-sb-product-quantity="1"
+								data-sb-product-img="img/products/p-ps4-1.jpg"><i class="fa fa-shopping-cart"
+									aria-hidden="true"></i></a>
 						</div>
 					</div>
 					<div class="col-3">
 						<div class="product-item">
-							<a href="#">
+							<a href="#small-dialog" class="popup-with-zoom-anim">
 								<div class="product-item__img">
-									<img src="img/products/p-ps4-2.jpg" alt="">
+									<img src="img/products/p-ps4-2.jpg" alt="" id="metro">
 								</div>
 							</a>
 							<div class="product-item__desc">
+								<span class="d-none article">0002</span>
 								<span class="price">2 990 Руб</span>
 								<h3>Deep Silver Метро</h3>
 								<p class="description">Metro Exodus является третьей игрой в серии Metro, сюжет которой основан на
 									романах Дмитрия Глуховского и продолжает историю Metro 2033 и Metro: Last Light</p>
 							</div>
-							<a href="#" class="btn btn-info"><i class="fa fa-info" aria-hidden="true"></i></a>
-							<a href="#" class="btn btn-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							<a href="#small-dialog" class="btn btn-info popup-with-zoom-anim"><i class="fa fa-info"
+									aria-hidden="true"></i></a>
+							<a href="#1" class="btn btn-cart product__add-to-cart-button" data-sb-id-or-vendor-code="0002"
+								data-sb-product-name="Deep Silver Метро" data-sb-product-price="2990" data-sb-product-quantity="1"
+								data-sb-product-img="img/products/p-ps4-2.jpg"><i class="fa fa-shopping-cart"
+									aria-hidden="true"></i></a>
 						</div>
 					</div>
 					<div class="col-3">
 						<div class="product-item">
-							<a href="#">
+							<a href="#small-dialog" class="popup-with-zoom-anim">
 								<div class="product-item__img">
-									<img src="img/products/p-ps4-1.jpg" alt="">
+									<img src="img/products/p-ps4-3.jpg" alt="">
 								</div>
 							</a>
 							<div class="product-item__desc">
+								<span class="d-none article">0003</span>
 								<span class="price">2 990 Руб</span>
-								<h3>Red Dead Redemption 2</h3>
-								<p class="description">Компьютерная игра в жанрах action-adventure и шутера от третьего лица с открытым
-									миром, разработанная и выпущенная Rockstar Games для игровых приставок PlayStation 4 и Xbox
-									One в 2018 году. Является третьей в серии Red Dead и приквелом к Red Dead Redemption (2010).</p>
+								<h3>Человек-паук</h3>
+								<p class="description">Человек-паук должен положить конец войне между бандами Маджия и криминальным
+									авторитетом по прозвищу Кувалда прежде, чем Нью-Йорк вселенной Marvel станет их крупнейшей жертвой.
+								</p>
 							</div>
-							<a href="#" class="btn btn-info"><i class="fa fa-info" aria-hidden="true"></i></a>
-							<a href="#" class="btn btn-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							<a href="#small-dialog" class="btn btn-info popup-with-zoom-anim"><i class="fa fa-info"
+									aria-hidden="true"></i></a>
+							<a href="#1" class="btn btn-cart product__add-to-cart-button" data-sb-id-or-vendor-code="0003"
+								data-sb-product-name="Человек-паук" data-sb-product-price="2990" data-sb-product-quantity="1"
+								data-sb-product-img="img/products/p-ps4-3.jpg"><i class="fa fa-shopping-cart"
+									aria-hidden="true"></i></a>
 						</div>
 					</div>
 					<div class="col-3">
 						<div class="product-item">
-							<a href="#">
+							<a href="#small-dialog" class="popup-with-zoom-anim">
 								<div class="product-item__img">
-									<img src="img/products/p-ps4-1.jpg" alt="">
+									<img src="img/products/p-ps4-4.jpg" alt="">
 								</div>
 							</a>
 							<div class="product-item__desc">
-								<span class="price">2 990 Руб</span>
-								<h3>Red Dead Redemption 2</h3>
-								<p class="description">Компьютерная игра в жанрах action-adventure и шутера от третьего лица с открытым
-									миром, разработанная и выпущенная Rockstar Games для игровых приставок PlayStation 4 и Xbox
-									One в 2018 году. Является третьей в серии Red Dead и приквелом к Red Dead Redemption (2010).</p>
+								<span class="d-none article">0004</span>
+								<span class="price"> 1 990 Руб</span>
+								<h3>God of War</h3>
+								<p class="description">Это поразительное переосмысление истории God of War сочетает в себе все
+									отличительные особенности культовой серии – свирепые сражения, эпические бои с боссами и
+									захватывающий
+									масштаб происходящего – и подкрепляет их мощным и трогательным сюжетом, привносящем новые краски в
+									мир
+									Кратоса.</p>
 							</div>
-							<a href="#" class="btn btn-info"><i class="fa fa-info" aria-hidden="true"></i></a>
-							<a href="#" class="btn btn-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							<a href="#small-dialog" class="btn btn-info popup-with-zoom-anim"><i class="fa fa-info"
+									aria-hidden="true"></i></a>
+							<a href="#1" class="btn btn-cart product__add-to-cart-button" data-sb-id-or-vendor-code="0004"
+								data-sb-product-name="God of War" data-sb-product-price="1990" data-sb-product-quantity="1"
+								data-sb-product-img="img/products/p-ps4-4.jpg"><i class="fa fa-shopping-cart"
+									aria-hidden="true"></i></a>
 						</div>
 					</div>
 					<div class="col-3">
 						<div class="product-item">
-							<a href="#">
+							<a href="#small-dialog" class="popup-with-zoom-anim">
 								<div class="product-item__img">
-									<img src="img/products/p-ps4-1.jpg" alt="">
+									<img src="img/products/p-ps4-5.jpg" alt="">
 								</div>
 							</a>
 							<div class="product-item__desc">
-								<span class="price">2 990 Руб</span>
-								<h3>Red Dead Redemption 2</h3>
-								<p class="description">Компьютерная игра в жанрах action-adventure и шутера от третьего лица с открытым
-									миром, разработанная и выпущенная Rockstar Games для игровых приставок PlayStation 4 и Xbox
-									One в 2018 году. Является третьей в серии Red Dead и приквелом к Red Dead Redemption (2010).</p>
+								<span class="d-none article">0005</span>
+								<span class="price">1 390 Руб</span>
+								<h3>Detroit: Стать человеком</h3>
+								<p class="description">Detroit: Стать человеком. Погрузитесь в напряженную футуристическую историю и
+									управляйте тремя персонажами в мире, полном сложных моральных дилемм... ... Столкнитесь с одним из
+									сложных моральных выборов в «Detroit: Стать человеком» в этой захватывающей демоверсии.</p>
 							</div>
-							<a href="#" class="btn btn-info"><i class="fa fa-info" aria-hidden="true"></i></a>
-							<a href="#" class="btn btn-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							<a href="#small-dialog" class="btn btn-info popup-with-zoom-anim"><i class="fa fa-info"
+									aria-hidden="true"></i></a>
+							<a href="#1" class="btn btn-cart product__add-to-cart-button" data-sb-id-or-vendor-code="0005"
+								data-sb-product-name="Detroit: Стать человеком" data-sb-product-price="1390"
+								data-sb-product-quantity="1" data-sb-product-img="img/products/p-ps4-5.jpg"><i
+									class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 						</div>
 					</div>
 					<div class="col-3">
 						<div class="product-item">
-							<a href="#">
+							<a href="#small-dialog" class="popup-with-zoom-anim">
 								<div class="product-item__img">
-									<img src="img/products/p-ps4-1.jpg" alt="">
+									<img src="img/products/p-xbox-1.jpg" alt="">
 								</div>
 							</a>
 							<div class="product-item__desc">
-								<span class="price">2 990 Руб</span>
-								<h3>Red Dead Redemption 2</h3>
-								<p class="description">Компьютерная игра в жанрах action-adventure и шутера от третьего лица с открытым
-									миром, разработанная и выпущенная Rockstar Games для игровых приставок PlayStation 4 и Xbox
-									One в 2018 году. Является третьей в серии Red Dead и приквелом к Red Dead Redemption (2010).</p>
+								<span class="d-none article">0006</span>
+								<span class="price">3 990 Руб</span>
+								<h3>Mortal Kombat 11</h3>
+								<p class="description">Mortal Kombat 11 (сокр. MK11; рус. «Смертельная битва 11») — компьютерная игра в
+									жанре файтинг, разработанная американской студией NetherRealm Studios под издательством WB Games</p>
 							</div>
-							<a href="#" class="btn btn-info"><i class="fa fa-info" aria-hidden="true"></i></a>
-							<a href="#" class="btn btn-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							<a href="#small-dialog" class="btn btn-info popup-with-zoom-anim"><i class="fa fa-info"
+									aria-hidden="true"></i></a>
+							<a href="#1" class="btn btn-cart product__add-to-cart-button" data-sb-id-or-vendor-code="0006"
+								data-sb-product-name="Mortal Kombat 11" data-sb-product-price="3990" data-sb-product-quantity="1"
+								data-sb-product-img="img/products/p-xbox-1.jpg"><i class="fa fa-shopping-cart"
+									aria-hidden="true"></i></a>
 						</div>
 					</div>
 					<div class="col-3">
 						<div class="product-item">
-							<a href="#">
+							<a href="#small-dialog" class="popup-with-zoom-anim">
 								<div class="product-item__img">
-									<img src="img/products/p-ps4-1.jpg" alt="">
+									<img src="img/products/p-xbox-2.jpg" alt="">
 								</div>
 							</a>
 							<div class="product-item__desc">
-								<span class="price">2 990 Руб</span>
-								<h3>Red Dead Redemption 2</h3>
-								<p class="description">Компьютерная игра в жанрах action-adventure и шутера от третьего лица с открытым
-									миром, разработанная и выпущенная Rockstar Games для игровых приставок PlayStation 4 и Xbox
-									One в 2018 году. Является третьей в серии Red Dead и приквелом к Red Dead Redemption (2010).</p>
+								<span class="d-none article">0007</span>
+								<span class="price">990 Руб</span>
+								<h3>Средиземье:Тени Войны</h3>
+								<p class="description">Middle-earth: Shadow of War (рус. Средиземье: Тени войны) — компьютерная игра в
+									жанре Action/RPG, которая является продолжением Средиземье: Тени Мордора. Разработчиком выступила
+									студия Monolith Productions, а издателем стал Warner Bros. </p>
 							</div>
-							<a href="#" class="btn btn-info"><i class="fa fa-info" aria-hidden="true"></i></a>
-							<a href="#" class="btn btn-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							<a href="#small-dialog" class="btn btn-info popup-with-zoom-anim"><i class="fa fa-info"
+									aria-hidden="true"></i></a>
+							<a href="#1" class="btn btn-cart product__add-to-cart-button" data-sb-id-or-vendor-code="0007"
+								data-sb-product-name="Средиземье:Тени Войны" data-sb-product-price="990" data-sb-product-quantity="1"
+								data-sb-product-img="img/products/p-xbox-2.jpg"><i class="fa fa-shopping-cart"
+									aria-hidden="true"></i></a>
 						</div>
 					</div>
 					<div class="col-3">
 						<div class="product-item">
-							<a href="#">
+							<a href="#small-dialog" class="popup-with-zoom-anim">
 								<div class="product-item__img">
-									<img src="img/products/p-ps4-1.jpg" alt="">
+									<img src="img/products/p-xbox-3.jpg" alt="">
 								</div>
 							</a>
 							<div class="product-item__desc">
-								<span class="price">2 990 Руб</span>
-								<h3>Red Dead Redemption 2</h3>
-								<p class="description">Компьютерная игра в жанрах action-adventure и шутера от третьего лица с открытым
-									миром, разработанная и выпущенная Rockstar Games для игровых приставок PlayStation 4 и Xbox
-									One в 2018 году. Является третьей в серии Red Dead и приквелом к Red Dead Redemption (2010).</p>
+								<span class="d-none article">0008</span>
+								<span class="price">2 090 Руб</span>
+								<h3>Grand Theft Auto V</h3>
+								<p class="description">Grand Theft Auto V (сокр. GTA V) — мультиплатформенная компьютерная игра в жанре
+									action-adventure с открытым миром, разработанная компанией Rockstar North и изданная компанией
+									Rockstar Games</p>
 							</div>
-							<a href="#" class="btn btn-info"><i class="fa fa-info" aria-hidden="true"></i></a>
-							<a href="#" class="btn btn-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							<a href="#small-dialog" class="btn btn-info popup-with-zoom-anim"><i class="fa fa-info"
+									aria-hidden="true"></i></a>
+							<a href="#1" class="btn btn-cart product__add-to-cart-button" data-sb-id-or-vendor-code="0008"
+								data-sb-product-name="Grand Theft Auto V" data-sb-product-price="2090" data-sb-product-quantity="1"
+								data-sb-product-img="img/products/p-xbox-3.jpg"><i class="fa fa-shopping-cart"
+									aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="product-item">
+							<a href="#small-dialog" class="popup-with-zoom-anim" id="kid">
+								<div class="product-item__img">
+									<img src="img/products/p-ps4-6.jpg" alt="">
+								</div>
+							</a>
+							<div class="product-item__desc">
+								<span class="d-none article">0009</span>
+								<span class="price">2 590 Руб</span>
+								<h3>Kingdom Hearts III</h3>
+								<p class="description">Kingdom Hearts III — компьютерная игра в жанре ролевой боевик, разработанная
+									компанией Square Enix для PlayStation 4 и Xbox One. </p>
+							</div>
+							<a href="#small-dialog" class="btn btn-info popup-with-zoom-anim"><i class="fa fa-info"
+									aria-hidden="true"></i></a>
+							<a href="#1" class="btn btn-cart product__add-to-cart-button" data-sb-id-or-vendor-code="0009"
+								data-sb-product-name="Kingdom Hearts III" data-sb-product-price="2590" data-sb-product-quantity="1"
+								data-sb-product-img="img/products/p-ps4-6.jpg"><i class="fa fa-shopping-cart"
+									aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="product-item">
+							<a href="#small-dialog" class="popup-with-zoom-anim" id="bf">
+								<div class="product-item__img">
+									<img src="img/products/p-ps4-7.jpg" alt="">
+								</div>
+							</a>
+							<div class="product-item__desc">
+								<span class="d-none article">0010</span>
+								<span class="price">2 790 Руб</span>
+								<h3>Battlefield V</h3>
+								<p class="description">Battlefield 5 – современный шутер от первого лица, который позволит насладиться
+									приятным игровыми процессом и даст возможность сразиться с другими игроками. </p>
+							</div>
+							<a href="#small-dialog" class="btn btn-info popup-with-zoom-anim"><i class="fa fa-info"
+									aria-hidden="true"></i></a>
+							<a href="#1" class="btn btn-cart product__add-to-cart-button" data-sb-id-or-vendor-code="0010"
+								data-sb-product-name="Battlefield V" data-sb-product-price="2790" data-sb-product-quantity="1"
+								data-sb-product-img="img/products/p-ps4-7.jpg"><i class="fa fa-shopping-cart"
+									aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="product-item">
+							<a href="#small-dialog" class="popup-with-zoom-anim" id="fifa">
+								<div class="product-item__img">
+									<img src="img/products/p-ps4-8.jpg" alt="">
+								</div>
+							</a>
+							<div class="product-item__desc">
+								<span class="d-none article">0011</span>
+								<span class="price">2 790 Руб</span>
+								<h3>FIFA 19</h3>
+								<p class="description">FIFA 19 — 26-я футбольная игра из серии игр FIFA, разработанная для платформ
+									Windows, Nintendo Switch, PlayStation 4, PlayStation 3, Xbox One и Xbox 360. Игра выпущена компанией
+									Electronic Arts 28 сентября 2018. </p>
+							</div>
+							<a href="#small-dialog" class="btn btn-info popup-with-zoom-anim"><i class="fa fa-info"
+									aria-hidden="true"></i></a>
+							<a href="#1" class="btn btn-cart product__add-to-cart-button" data-sb-id-or-vendor-code="0011"
+								data-sb-product-name="FIFA 19" data-sb-product-price="2790" data-sb-product-quantity="1"
+								data-sb-product-img="img/products/p-ps4-8.jpg"><i class="fa fa-shopping-cart"
+									aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="product-item">
+							<a href="#small-dialog" class="popup-with-zoom-anim" id="ge3">
+								<div class="product-item__img">
+									<img src="img/products/p-ps4-9.jpg" alt="">
+								</div>
+							</a>
+							<div class="product-item__desc">
+								<span class="d-none article">0012</span>
+								<span class="price">2 790 Руб</span>
+								<h3>God Eater 3</h3>
+								<p class="description">GOD EATER 3 – проект, разработанный в жанре экшен с элементами РПГ. Здесь тебе
+									предстоит отправиться на уничтожения соперников, но справится с задачей будет непросто</p>
+							</div>
+							<a href="#small-dialog" class="btn btn-info popup-with-zoom-anim"><i class="fa fa-info"
+									aria-hidden="true"></i></a>
+							<a href="#1" class="btn btn-cart product__add-to-cart-button" data-sb-id-or-vendor-code="0012"
+								data-sb-product-name="God Eater 3" data-sb-product-price="2790" data-sb-product-quantity="1"
+								data-sb-product-img="img/products/p-ps4-9.jpg"><i class="fa fa-shopping-cart"
+									aria-hidden="true"></i></a>
 						</div>
 					</div>
 				</div>
-				<a href="#" class="btn-show">В каталог</a>
+
+			</div>
+			<a href="catalog.html" class="btn-show">В каталог</a>
 			</div>
 		</section>
 
@@ -447,10 +584,11 @@
 					<div class="col-6">
 						<form class="subscib-form" id="subscribe-form">
 							<fieldset id="sub-wrap">
-								<input type="email" name="email" id="sub-mail" placeholder="Ваш e-mail">
+								<input type="email" name="email" id="sub-mail" placeholder="Ваш e-mail" required>
 							</fieldset>
 							<button type="submit" form="subscribe-form">Подписаться</button>
 						</form>
+						<div id="messegeResult-feedback"></div>
 					</div>
 				</div>
 			</div>
@@ -473,10 +611,10 @@
 						<nav>
 							<ul>
 								<li><a href="index.html" class="active">Главная</a></li>
-								<li><a href="#">Каталог</a></li>
-								<li><a href="#">О нас</a></li>
-								<li><a href="#">Доставка и оплата</a></li>
-								<li><a href="#">Контакты</a></li>
+								<li><a href="catalog.html">Каталог</a></li>
+								<li><a href="about.html">О нас</a></li>
+								<li><a href="delivery-pay.html">Доставка и оплата</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -484,17 +622,48 @@
 				<div class="col-5">
 					<div class="social-bottom">
 						<ul>
-							<li class="li"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-							<li class="li"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li class="li"><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-							<li class="li"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							<li class="li"><a href="#"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
+							<li class="li"><a href="https://vk.com"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+							<li class="li"><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							</li>
+							<li class="li"><a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+							</li>
+							<li class="li"><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							</li>
+							<li class="li"><a href="https://www.twitch.tv/"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
+
+	<div id="small-dialog" class="zoom-anim-dialog mfp-hide product__element">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="small-dialog__img">
+						<img src="img/product/product-1.jpg" alt="" id="product-img">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="small-dialog-text__wrapper">
+						<div class="small-dialog-text">
+							<h2 id="product-name">Заголовок</h2>
+							<p id="description">jgbcfybt</p>
+							<span class="price" id="price">тест </span></i>
+						</div>
+						<button class="product__add-to-cart-button order-btn" data-sb-id-or-vendor-code=""
+							data-sb-product-name="Заголовок" data-sb-product-price="100" data-sb-product-quantity="1"
+							data-sb-product-img="img">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i> В корзину
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 	<script src="js/scripts.min.js"></script>
 </body>
 
